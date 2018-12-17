@@ -29,6 +29,7 @@ public class MainActivity extends MvpAppCompatActivity {
     public void initRecyclerView(){
         RecView.setLayoutManager(new LinearLayoutManager(this));
         RecView.setHasFixedSize(false);
-
+        RecViewAdapter recViewAdapter = new RecViewAdapter();
+        RecView.setAdapter(recViewAdapter);
     }
 }
